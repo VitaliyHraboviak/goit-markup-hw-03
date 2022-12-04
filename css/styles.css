@@ -32,19 +32,18 @@ button{
   --card-set-gap: 24px;
   --brand-color: #4d5ae5;
   --brand-color-black: #2e2f42;
---brand-color-white: #f8f8f8;
---brand-color-black-text: #434455;
---brand-color-white-text:#ffffff;
---brand-color-white-background:#ffffff;
---brand-color-white-background-color:#f4f4fd;
---brand-color-blue: #404bbf;
---brand-color-black-1: #000000;
---brand-color-white-2: #e7e9fc;
+  --brand-color-white: #f8f8f8;
+  --brand-color-black-text: #434455;
+  --brand-color-white-text:#ffffff;
+  --brand-color-white-background:#ffffff;
+  --brand-color-white-background-color:#f4f4fd;
+  --brand-color-blue: #404bbf;
+  --brand-color-black-1: #000000;
+  --brand-color-white-2: #e7e9fc;
 }
 body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-color-black-1);
-  width: 1440px;
   margin: 0 auto;
 }
 .visually-hidden{
@@ -76,8 +75,6 @@ body {
   background-color: var(--brand-color-white-background);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  width: 1440px;
-  height: 72px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -88,33 +85,31 @@ body {
   align-items: flex-start;
   padding: 0px;
   gap: 40px;
-  position: absolute;
-  width: 261px;
-  height: 24px;
-  left: 348px;
-  top: 24px;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   list-style: none;
   margin-top: auto;
+  margin-left: 77px;
   /* flex: none; */
   /* order: 0; */
   /* flex-grow: 0; */
 }
 .mail {
   list-style: none;
+
 }
 .menu .link:hover,
 .menu .link:focus {
-  color: var(--brand-color);
+  color: var(--brand-color-black-text);
 }
 
 .menu .link {
   color:var(--brand-color-black);
   text-decoration: none;
+  padding: 24px 0;
+  display: inline-block;
 }
 
 .menu .link:click {
@@ -125,32 +120,34 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  position: absolute;
   color: var(--brand-color-black);
-  width: 115px;
-  left: 156px;
   top: 24px;
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
 }
+.navigation{
+  display: flex;
+  align-items: center;
+}
+.coddac{
+  display: flex;
+  align-items: center;
+}
 .navigation-item {
   color: var(--brand-color);
 }
+.contacts{
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+}
 .infodevstudio {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  position: absolute;
-  width: 153px;
-  height: 24px;
-  left: 940px;
-  top: 24px;
   letter-spacing: 0.02em;
   color:var(--brand-color-black-text);
   text-decoration: none;
@@ -171,11 +168,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  position: absolute;
-  width: 151px;
-  height: 24px;
-  left: 1133px;
-  top: 24px;
+  margin-left: 40px;
   letter-spacing: 0.02em;
   color:var(--brand-color-black-text);
   text-decoration: none;
@@ -189,28 +182,23 @@ body {
 }
 .effective-solutions {
   background: var(--brand-color-black);
-  width: 1440px;
-  left: 0px;
-  top: 72px;
   margin-top: 0px;
-  border: 1px solid var(--brand-color-black-1);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 192px;
+  padding-bottom: 192px;
 
 }
 .effective-solutions-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
+  
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 500px;
+  
+  margin-top: 0;
   
   color: var(--brand-color-white-text);
   text-align: center;
-  display: flex;
-  margin-top: 72px;
+  
+  
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
@@ -218,18 +206,16 @@ body {
 
 .button-studio {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.1875;
   display: block;
-  margin-left: auto;
+  margin-left: auto; 
   margin-right: auto;
   background:var(--brand-color);
   border: 1px solid var(--brand-color-black-1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-bottom: 72px;
   margin-top: 48px;
   align-items: center;
   text-align: center;
@@ -263,7 +249,8 @@ button .link:default {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--brand-color-black);
-  margin-left: 16px;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .card-set > .straegy,
@@ -292,6 +279,8 @@ button .link:default {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color-black-text);
+margin-top: 0;
+margin-bottom: 0;
 }
 
 .ourprinciples-title {
@@ -302,7 +291,6 @@ button .link:default {
 }
 .foto-doing {
   display: flex;
-  width: 360px;
   margin-top: 72px;
   gap: var(--card-set-gap);
 }
@@ -329,9 +317,7 @@ button .link:default {
 .our-team {
   display: block;
   background-color: var(--brand-color-white-background-color);
-  width: 1440px;
-  left: 0px;
-  top: 1551px;
+ 
   
   /* padding-top: 120px;
   padding-bottom: 120px; */
@@ -351,6 +337,7 @@ button .link:default {
   margin-bottom: 0;
 }
 .container {
+  
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
@@ -382,38 +369,30 @@ button .link:default {
   letter-spacing: 0.02em;
   color:var(--brand-color-black-text);
   margin-top: 8px;
+  margin-bottom: 0;
 }
 .item {
-  display: flex;
-  flex-direction: column;
+  list-style: none;
   justify-content: center;
   align-items: center;
-  
-  width: 264px;
-  
-  left: 156px;
-  top: 1783px;
+  padding-bottom: 32px;
   background:var(--brand-color-white-background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   
 }
-.foto {
- 
-}
 
 .lowerpart {
   background: var(--brand-color-black);
   border: 1px solid var(--brand-color-black-1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 1440px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .lowerpart-block {
   display: block;
   color: var(--brand-color-white-background-color);
-  width: 264px;
-  margin-top: 100px;
   text-decoration: none;
   font-family: 'Raleway';
   font-style: normal;
@@ -428,8 +407,6 @@ button .link:default {
 }
 
 .lowerpart-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -437,7 +414,7 @@ button .link:default {
   display: block;
   color: var(--brand-color-white-2);
   width: 264px;
-  margin-bottom: 100px;
+  margin-bottom: 0;
 }
 
 /* portfolio */
@@ -452,31 +429,24 @@ button .link:default {
 .main-portfolio{
   display: block;
   margin: auto;
-  width: 1440px;
   
-
 }
 .foto-work{
   display: flex;
-  gap: 24px;
+  
+  row-gap: 48px;
+  column-gap: 24px;
   flex-wrap: wrap;
 }
 
 .block-button {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
   background: var(--brand-color-white-background-color);
 }
 .button-portfolio {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.04em;
   margin-left: auto;
   margin-right: auto;
@@ -484,11 +454,7 @@ button .link:default {
   color:var(--brand-color);
   border: 1px solid var(--brand-color-white-2);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
   border-radius: 4px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   padding: 8px 16px;
 }
 .button-portfolio:hover,
@@ -508,15 +474,21 @@ button .link:default {
 
 .foto-text-title {
   display: inline-block;
-  gap: 24px;
+  
   box-sizing: border-box;
   width: 360px;
-  height: 420px;
-  left: 156px;
-  top: 285px;
+  
   background: var(--brand-color-white-background);
-  border: 0.5px solid var(--brand-color-white-background-color);
+  
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.cartca{
+  border-left: 0.5px solid var(--brand-color-white-background-color);
+  border-right: 0.5px solid var(--brand-color-white-background-color);
+  border-bottom: 0.5px solid var(--brand-color-white-background-color); 
+padding-left: 16px;
+padding-top: 32px;
+padding-bottom: 32px;
 }
 .fototext-title {
   display: inline-block;  
@@ -573,15 +545,11 @@ button .link:default {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--brand-color-black-text);
-  margin-left: 16px;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .foto-portfolio{
   width: 360px;
-  height: 300px;
-  left: 0px;
-  top: 0px;
-}
-.centr{
-  margin-top: 51px;
-  margin-bottom: 48px;
+  
 }
