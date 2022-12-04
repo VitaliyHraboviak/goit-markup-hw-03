@@ -112,7 +112,7 @@ body {
   display: inline-block;
 }
 
-.menu .link:click {
+/* .menu .link:click { */
   color: var(--brand-color);
 }
 .webStudio {
