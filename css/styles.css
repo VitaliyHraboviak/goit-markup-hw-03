@@ -5,10 +5,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
-.h1,
-.h2,
-.h3,
-.p,{
+h1,
+h2,
+h3,
+p,{
   margin-top:0;
   margin-bottom: 0;
 }
@@ -18,12 +18,24 @@ ul{
   margin-bottom: 0;
   padding-left: 0;
 }
+
 .image{
   display: block;
+  width: 100%;
+  height: auto; 
 }
+
 section{
   padding-top: 120px;
   padding-bottom: 120px;
+  
+}
+.photo-what {
+  list-style: none;
+
+}
+.visually{
+  padding-bottom: 0;
 }
 button{
   cursor: pointer;
@@ -75,8 +87,7 @@ body {
   background-color: var(--brand-color-white-background);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+  }
 
 .menu { 
   display: flex;
@@ -289,6 +300,7 @@ margin-bottom: 0;
 }
 .what-are-we-doing {
   gap: var(--card-set-gap);
+  padding-bottom: 120px;
 }
 .foto-doing {
   display: flex;
@@ -342,8 +354,8 @@ margin-bottom: 0;
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
   
 
   
